@@ -1,0 +1,49 @@
+import os
+
+os.path.join('usr','bin','spam')	>>> 'usr\\bin\\spam'
+.getcwd()	>>> get current working directory
+.chdir(path)	>>> to change the directory to a path
+.makdirs(path)
+
+os.path.abspath(path)	>>> will return a string of the absolute path of the argument.
+			This is an easy way to convert a relative path to an absolute one.
+os.path.isabs(path)	>>> true if the argument is an absolute path, false if relative
+
+os.path.relpath(path, start) >>> will return a string of a relative path from the start path
+				to path. If start is not provided the current working dir is used
+				as the start path.
+os.path.dirname(path)	>>> will return everything that comes before the last slash in the path args.
+os.path.basename(path)	>>> will return a string of everything that comes after the last slash in the args.
+os.path.split(path)	>>> ('dir_name', 'base')
+
+os.path.getsize(path)	>>> the size in bytes of the file in the path arguments
+os.listdir(path)	>>> list of filename for each file in the path args
+
+os.path.exists(path)	>>> true if exist
+os.path.isdir(path)	>>> true if the path exists and is a folder
+os.path.isfile(path)	>>> true if exists and is a file
+
+fhand = open(file)
+fhand = file.read()
+or fhand = file.readlines()	>>> to get a list of string values from the file
+
+fhand.write("HELLO")
+fhand.close()
+
+-----------------------------------
+saving vars with the shelve modules
+-----------------------------------
+
+import shelve
+shelffile = shelve.open(mydata)
+cats = ['', '', '']
+shelfile['cats'] = cats
+shelffile.close()
+
+>>> will return 3 files === .bak .dat .dir
+
+shelffiles['cats'] >>>	values
+type(shelffile)	>>> <class 'shelve.DbfilenameShelf'>
+list(shelffiles.keys())	>>> all the keys
+list.(shelffiles.values()) >>> all the values
+

@@ -1,0 +1,12 @@
+Jarvis =]
+1. import pyttsx3
+2. import datetime and define wishme function
+3. define take command funtion and import speechRecognition
+4. import wikipedia and improve by adding searching within wikipedia
+5. Import webbrowser and add google and open youtube functionality
+6. add smtplib to send email
+
+
+
+**.Try to add few modules : such as
+	1.

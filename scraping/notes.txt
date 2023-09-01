@@ -1,0 +1,8 @@
+webbrowser	>>> Comes with Python and opens a browser to a specific page
+Requests	>>> Download files and web pages from the internet
+Beautiful Soup	>>> Parses HTML
+Selenium	>>> Launches and controls a web browser. 
+		It is able to fill in the forms and simulate mouse clicks in the browser.
+
+import webbrowser
+webbrowser.open('http://www.google.com')
